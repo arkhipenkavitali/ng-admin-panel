@@ -1,0 +1,5 @@
+<div class="qwe" *ngIf="isLoading | async"></div>
+<div *ngFor="let user of personalList | async">
+  {{user.name}}
+  <button [routerLink]="['user', user.id]">Click me</button>
+</div>
